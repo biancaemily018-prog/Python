@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{Título}}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'style.css') }}">
+    <!-- url for vincula a subpasta static automaticamente-->
+</head>
+
+<main class="card">
+    <h1> {{Título}} </h1>
+    <!-- as duas chaves {{}} são usadas para puxar o python para dentro do html-->
+    <p><strong> Aluno:</strong> {{ usuario.nome }}</p>
+    <p><strong> Curso:</strong> {{ usuario.curso}}</p>
+    <p><strong> Nota final:</strong> {{ usuario.nota_final }}</p>
+
+    <!-- sinal de igual é "==", porque o "=" sozinho significa recebe-->
+    <div class="tag {{ 'Aprovado' if resultado == 'Aprovado'else 'reprovado'}}"> 
+       Status: {{ resultado }}
+    </div>
+
+</main>
+<body>
+
+
+    
+</body>
+</html>
