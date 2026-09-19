@@ -1,0 +1,43 @@
+* {
+box-sizing: border-box;
+font-family: system-ui, -apple-system, sans-serif;
+margin: 0;
+padding: 0;
+
+}
+
+body {
+    background-color: #ffe1e2;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    color: #000;
+}
+
+.card{
+    background-color: #fffac9;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    WIDTH: 400px;
+    display: flex;
+}
+
+.tag {
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+
+}
+
+.aprovado {
+    background-color:rgb(15, 43, 14);
+    color: #2a5bff;
+
+}
+
+.reprovado {
+    background-color: rgb(153, 13, 13);
+    color: #110404;
+}
